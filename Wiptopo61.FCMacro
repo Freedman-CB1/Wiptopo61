@@ -382,7 +382,7 @@ class cbToolBox(QtGui.QDockWidget):
     def on_update_placements(self):
         self.on_new_property()
         self.show_ready()
-        self.on_update_edges()
+ #       self.on_update_edges()
         doc = FreeCAD.ActiveDocument
         for obj in doc.Objects: 
             if hasattr(obj,'Conx_placement'):
